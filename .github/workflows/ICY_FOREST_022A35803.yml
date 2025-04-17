@@ -15,9 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - name: Change Ownership of .git Directory
-        run: |
-          run:  chmod  -R  777  .
       - uses: actions/checkout@v2
         with:
           submodules: true
